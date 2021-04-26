@@ -1,0 +1,19 @@
+build
+
+# macOS
+.DS_Store*
+._*
+
+# npm
+node_modules
+package-lock.json
+
+# IDE
+.idea
+.vscode
+
+# Serverless
+.serverless
+
+# eslint
+.eslintcache
