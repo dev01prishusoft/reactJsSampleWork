@@ -8,13 +8,16 @@ import rootSaga from "./saga";
 
 const history = createHashHistory();
 const sagaMiddleware = createSagaMiddleware();
-const routeMiddleware = routerMiddleware();
-const middlewares = [thunk, sagaMiddleware, routeMiddleware];
+const routeMiddleware = routerMiddleware(history);
+const middlewares = [thunk, sagaMiddleware, routeMiddleware ]; 
 
-const composeEnhancers = 
-    typeof window === "object" && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
-        ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({})
-        : compose;
+declare global {
+    interface Window {
+      __REDUX_DEVTOOLS_EXTENSION_COMPOSE__?: typeof compose;
+    }
+}
+
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const store = createStore(
     combineReducers({

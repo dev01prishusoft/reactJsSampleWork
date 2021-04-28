@@ -1,15 +1,17 @@
-.MuiButton-containedSizeSmall{
-    border-radius: 20px !important;
-    padding: 7px 10px !important;
-    font-size: 10px !important;
+.taskMainDiv{
+    background: black;
+    padding: 40px 40px 5px 40px;
+    height: 100%;
 }
-.MuiButton-label{
-    text-transform: initial;
+.pageTitle{
+    font-weight: bold;
+    font-size: 36px;
+    color: white;
 }
-.MuiTypography-body2{
-    font-size: 12px !important;
+.pageDescription{
+    font-size: 16px;
+    color: white;
 }
-.MuiGrid-spacing-xs-6{
-    margin: 0px !important;
-    width: 100% !important;
+.bottomBtn{
+    margin-top: 60px;
 }

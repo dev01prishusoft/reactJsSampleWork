@@ -1,0 +1,67 @@
+.MuiButton-containedSizeSmall{
+    height: 33px !important;
+    margin: 0 auto !important;
+}
+.MuiCardActions-root {
+    padding: 0 8px 20px 8px !important;
+}
+.MuiButton-containedSizeSmall{
+    border-radius: 20px !important;
+    padding: 7px 10px !important;
+    font-size: 10px !important;
+}
+.MuiButton-label{
+    text-transform: initial;
+}
+.MuiTypography-body2{
+    font-size: 12px !important;
+}
+.MuiGrid-spacing-xs-6{
+    margin: 0px !important;
+    width: 100% !important;
+}
+.MuiSvgIcon-root {
+    fill: red !important;
+    border: 1px solid red;
+    border-radius: 50%;
+    height: 40px !important;
+    width: 40px !important;
+}
+
+.middleCard{
+    transform: scale(1.1);
+    z-index: 10;
+}
+.cornerCard{
+    opacity: 0.6;
+}
+.arrowIconDiv{
+    align-items: center;
+    display: flex;
+    width: 12.5%;
+}
+.overflowText{
+    display: block;
+    display: -webkit-box;
+    line-height: 1;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 360px) {
+    .MuiSvgIcon-root {
+        height: 25px !important;
+        width: 25px !important;
+    }
+    .leftArrow{
+        flex-direction: row !important;
+    }
+    .rightArrow{
+        flex-direction: row-reverse !important;
+    }
+    .arrowIconDiv{
+        width: 50px !important;
+    }
+  }

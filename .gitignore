@@ -1,22 +1,3 @@
-build
-
-# macOS
-.DS_Store*
-._*
-
-# npm
-node_modules
-package-lock.json
-
-# IDE
-.idea
-.vscode
-
-# Serverless
-.serverless
-
-# eslint
-.eslintcache
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
